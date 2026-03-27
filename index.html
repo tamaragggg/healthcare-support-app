@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Healthcare Support Assistant</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f4f7f9;
+      text-align: center;
+    }
+    .container {
+      width: 350px;
+      margin: 50px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, textarea, select {
+      width: 90%;
+      margin: 10px;
+      padding: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      background: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    #response {
+      margin-top: 15px;
+      color: green;
+      font-weight: bold;
+    }
+    <style>
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    width: 380px;
+    margin: 60px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  input, textarea, select {
+    width: 90%;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+  }
+
+  input:focus, textarea:focus, select:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 5px #4facfe;
+  }
+
+  button {
+    width: 95%;
+    padding: 12px;
+    background: linear-gradient(135deg, #43e97b, #38f9d7);
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+  }
+
+  #response, #chatResponse {
+    margin-top: 10px;
+    color: green;
+    font-weight: bold;
+  }
+
+  .chatbox {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+  }
+</style>
+  </style>
+</head>
+<body>
+
+
+<div class="container">
+  <h2>Healthcare Support</h2>
+
+  <input type="text" id="name" placeholder="Your Name" required>
+  <input type="email" id="email" placeholder="Email" required>
+
+  <select id="role">
+    <option value="patient">Patient</option>
+    <option value="volunteer">Volunteer</option>
+  </select>
+
+  <textarea id="message" placeholder="Describe your issue"></textarea>
+
+  <button onclick="submitForm()">Submit</button>
+
+  <p id="response"></p>
+
+<h3>Ask Health Assistant 🤖</h3>
+<input type="text" id="chatInput" placeholder="Ask something...">
+<button onclick="chatbot()">Ask</button>
+<p id="chatResponse"></p>
+
+
+
+
+</div>
+
+
+
+
+<script src="app.js"></script>
+</body>
+</html>
